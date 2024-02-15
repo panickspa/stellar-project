@@ -1,10 +1,19 @@
 {
   "name": "dfinity_project",
   "main": "index.js",
+  "scripts": {
+    "serve": "dfx start --background",
+    "serve:clean": "dfx start --background --clean",
+    "stop": "dfx stop",
+    "deploy": "dfx deploy",
+    "create-canister": "dfx canister create --all",
+    "build": "dfx build",
+    "install-canister": "dfx canister install --all"
+  },
   "dependencies": {
     "@dfinity/agent": "^0.19.2",
     "@dfinity/candid": "^0.19.2",
-    "azle": "^0.18.6",
+    "azle": "^0.16.2",
     "uuid": "^9.0.0"
   },
   "engines": {
